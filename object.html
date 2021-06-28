@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var emp={
+        name:"Saad Ur Rehman",
+        age: 22,
+        gender: "male",
+        emp_id:21,
+        cont:{
+            mob:"03432897544",
+            phone:"02136954397"
+        }
+    }
+
+var dept={
+    emp_id:21,
+    emp_dept: "Web Development",
+    join_date: "12-9-2021"
+
+}
+
+
+
+// document.write(emp.name);
+// document.write("<br>");
+// document.write(emp.age);
+// document.write("<br>");
+// document.write(emp.gender);
+// document.write("<br>");
+// document.write(emp.emp_id);
+// document.write("<br>");
+// document.write(emp.cont.mob);
+// document.write("<br>");
+// document.write(emp.cont.phone);
+
+var newobj={...emp,...dept};   // concatinating objects using spread operator
+console.log(newobj);
+
+
+
+
+
+</script>
+</html>
