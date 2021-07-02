@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+let p=new Promise(function(resolve,reject){
+
+    let a=4;
+    if(a==3)
+    {
+        resolve();
+    }
+    else
+    {
+        reject();
+    }
+
+})
+
+p.then(function(msg){
+
+    document.write("This is when the promise resolve");
+}).catch(function(msg){
+
+    document.write("This is in the when the pormise reject");
+})
+
+
+
+
+
+
+</script>
+</html>
